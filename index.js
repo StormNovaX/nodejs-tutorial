@@ -8,6 +8,9 @@ const { basicAuth } = require('./middleware/basic-auth');
 const MessageService = require('./services/message');
 const messageService = new MessageService();
 
+// websocket
+require('./web/websocket');
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use('/api/v1', v1);
