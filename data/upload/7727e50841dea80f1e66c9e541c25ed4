@@ -1,0 +1,4 @@
+composer install
+npm install
+php artisan make auth 
+Import component dans component
